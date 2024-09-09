@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photography studio</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            font-family: 'Helvetica', sans-serif;
+            color: #333;
+            
+        }
+
+        /* Estilo del encabezado */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ec90e8;
+            color: white;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+
+        }
+            
+            
+
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar nav ul li {
+            margin-left: 20px;
+        }
+
+        .navbar nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero section */
+        .hero {
+            height: 100vh;
+            background-image: url('https://www.javiersomoza.com/wp-content/uploads/2018/01/tutorial-NegocioFotografico-TITULO.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn-primary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid rgb(4, 22, 114);
+        }
+
+        .btn-primary:hover {
+            background-color: white;
+            color: rgb(18, 18, 228);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid rgb(4, 22, 114);
+        }
+
+        .btn-secondary:hover {
+            background-color: white;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="navbar">
+        <div class="logo">¡BIENVENIDO!</div>
+        <nav>
+            <ul>
+                <li><a href=>Contacto</a></li>
+                <li><a href=>Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Enfoque & Arte</h1>
+            <p>Servicios de fotografía y video para eventos, retratos o productos.</p>
+            <div class="cta-buttons">
+                <a href="servicios.html" class="btn-primary">Servicios</a>
+                <a href="galeria.html" class="btn-secondary">Galería</a>
+            </div>
+        </div>
+    </section>
+
+</body></html>
+    
